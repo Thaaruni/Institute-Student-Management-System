@@ -1,0 +1,34 @@
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 34px;
+    margin: 20px;
+  }
+
+.selectionGrade{
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+.selectionGrade button {
+    width: 200px;
+    height: 200px;
+    background-color: #77b179;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 30px;
+    
+    transition: background-color 0.3s;
+    display:inline-flex;
+    justify-content:center; 
+    margin: 30px;
+  } 
+  
+  button:hover {
+    background-color: #69db6f;
+  }

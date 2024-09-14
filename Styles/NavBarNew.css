@@ -1,0 +1,276 @@
+/* src/Styles/NavBar.css */
+
+.navbar {
+  background-color: #508D4E;
+  color: #000000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* Ensures space between logo and buttons */
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: #000000;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-flex;
+}
+
+#logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.nav-menu-main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  font-size: 20px;
+}
+
+.nav-item {
+  margin: 0;
+  width: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-item a {
+  font-size: 20px;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+  font-size: large;
+  transition: color 0.3s ease;
+}
+
+.nav-links:hover {
+  color: #dac05a;
+}
+
+.menu-icon {
+  display: none;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: 5px;
+}
+
+.nav-signIn {
+  display: flex;
+  align-items: center;
+}
+
+.nav-signIn button {
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #000000;
+  background: #80AF81;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 15px;
+  width: 120px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 20px;
+  margin-bottom: 10px; /* Ensures the button is at a higher level */
+}
+
+.nav-signIn:hover{
+  color: #dac05a;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+      flex-direction: column;
+  }
+
+  .nav-menu {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+  }
+
+  .nav-menu.active {
+      display: flex;
+  }
+
+  .menu-icon {
+      display: block;
+  }
+
+  .navbar-img {
+      width: 100px;
+      height: 100px;
+  }
+}
+
+/* Blur Effect */
+.blur-background {
+  filter: blur(5px);
+  pointer-events: none; /* Prevent interactions with blurred content */
+}
+
+/* Popup Styles */
+
+
+.popup,
+.popup2 {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.25);
+  width: 380px;
+  height: auto;
+  max-height: 80%; /* Ensure the popup doesn't exceed the viewport height */
+  overflow-y: auto;
+  padding: 20px 30px;
+  background: #ffffff;
+  box-shadow: 2px 2px 5px 5px rgba(2, 2, 2, 0.15);
+  border-radius: 10px;
+  transition: opacity 200ms ease-in-out, transform 200ms ease-in-out;
+  z-index: 1000;
+}
+
+.popup{
+  top: 17%;
+}
+
+.popup.active,
+.popup2.active {
+ 
+  width: 500px;
+  height: auto;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup.active{
+  width: 550px;
+}
+
+.popup .close-btn,
+.popup2 .close-btn2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: #888;
+  color: #eee;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.popup .form h2,
+.popup2 .form h2 {
+  text-align: center;
+  color: #222;
+  margin: 10px 0 20px;
+  font-size: 25px;
+}
+
+.popup .form .form-element,
+.popup2 .form .form-element {
+  margin: 15px 0;
+}
+
+.popup .form .form-element label,
+.popup2 .form .form-element label {
+  font-size: 18px;
+  color: #222;
+}
+
+.popup .form .form-element input[type="text"],
+.popup .form .form-element select,
+.popup .form .form-element input[type="password"],
+.popup2 .form .form-element input[type="text"],
+.popup2 .form .form-element select,
+.popup2 .form .form-element input[type="password"] {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.popup .form .form-element input[type="checkbox"],
+.popup2 .form .form-element input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.popup .form .form-element button,
+.popup2 .form .form-element button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: #222;
+  color: #f5f5f5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.popup .form .form-element a,
+.popup2 .form .form-element a {
+  display: block;
+  text-align: right;
+  font-size: 15px;
+  color: #1a79ca;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Backdrop for blur effect */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.backdrop.active {
+  display: block;
+}

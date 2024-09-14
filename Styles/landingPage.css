@@ -1,0 +1,96 @@
+/* src/Styles/Introduction.css */
+
+/* src/Styles/Introduction.css */
+
+/* src/Styles/landingPage.css */
+
+.intro-poster {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.intro-poster img {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: left 1s ease-in-out;
+}
+
+.intro-poster img.active {
+  left: 0;
+}
+
+.intro-poster img.inactive {
+  left: -100%;
+}
+
+
+.introduction-container {
+  display: flex;
+  height: 50%; /* Adjust height as needed */
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9; /* Light background color */
+  font-size: 15px;
+}
+
+.introduction-image {
+  flex: 1; /* Take up one part of the space */
+  padding: 10px;
+}
+
+.introduction-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+  border-radius: 100px;
+  padding-top: 20px;
+}
+
+.introduction-text {
+  flex: 2; /* Take up two parts of the space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.introduction-text h1 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.introduction-text h4 {
+  margin-top: 0;
+  color: #666;
+}
+
+.introduction-title {
+  font-size: 2.5rem; /* Large font size for the title */
+  color: #333; /* Dark text color */
+  margin-bottom: 20px;
+}
+
+.introduction-paragraph {
+  font-size: 18px; /* Medium font size for the paragraph */
+  color: #666; /* Medium dark text color */
+  line-height: 1.6; /* Line height for better readability */
+}
+
+.news-title h1 {
+  font-size: 50px;
+  background-color: #71855d;
+  color: #fff; /* Added for better visibility */
+  padding: 10px; /* Added padding for aesthetics */
+}
+
+.new-area {
+  background-color: #acd8a7;
+  padding: 20px; /* Added padding for aesthetics */
+}
