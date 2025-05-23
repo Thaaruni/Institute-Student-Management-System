@@ -4,6 +4,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from "./Components/NavBar";
 import Registration from './Pages/RegistrationPage'
+import Attendance from './Pages/Attendance'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
               <Route path="/" element={<LandingPage />} />
               <Route path="/Registration" element={<Registration />} />
+              <Route path="/Attandance" element={<Attendance />} />
         </Routes>
 
       </Router>
