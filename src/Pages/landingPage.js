@@ -57,6 +57,11 @@ const LandingPage = () => {
                     <img src={InstituteImage} alt="Nenasara Institute" />
                 </div>
             </div>
+            <div className='new-area'>
+                <div className='news-title'><h1>News</h1></div>
+
+                <NewsPage/>
+            </div>
         </>
 
     );

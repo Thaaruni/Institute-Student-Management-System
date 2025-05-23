@@ -76,3 +76,15 @@
     color: #666; /* Medium dark text color */
     line-height: 1.6; /* Line height for better readability */
 }
+
+.news-title h1 {
+    font-size: 50px;
+    background-color: #71855d;
+    color: #fff; /* Added for better visibility */
+    padding: 10px; /* Added padding for aesthetics */
+}
+
+.new-area {
+    background-color: #acd8a7;
+    padding: 20px; /* Added padding for aesthetics */
+}
