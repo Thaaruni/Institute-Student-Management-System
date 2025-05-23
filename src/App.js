@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from "./Components/NavBar";
 import Registration from './Pages/RegistrationPage'
 import Attendance from './Pages/Attendance'
+import Payments from './Pages/Payments'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path="/" element={<LandingPage />} />
               <Route path="/Registration" element={<Registration />} />
               <Route path="/Attandance" element={<Attendance />} />
+              <Route path="/Payments" element={<Payments />} />
         </Routes>
 
       </Router>
