@@ -41,7 +41,7 @@ const NavBar = () => {
                 <div className="navbar-container">
                     <div className="navbar-logo-container">
                         <Link to="/" className="navbar-logo">
-                            <img className="navbar-img" id="logo" src={Logo} alt="Nenasara Institute Logo" />
+                            <img className="navbar-img" id="logo" src={Logo} alt="Nenasara Institute Logo"/>
                             <div className='InstituteName'>
                                 <div>Nenasara</div>
                                 <diV>Institute</diV>
@@ -76,6 +76,72 @@ const NavBar = () => {
                         </ul>
                     </div>
                 </div>
+
+                <div className='popup'>
+                    <div className='close-btn'>&times;</div>
+                    <div className='form'>
+                        <h2>Log In</h2>
+                        <div className='form-element'>
+                            <label>Position</label>
+                            <select name='position'>
+                                <option>Teacher</option>
+                                <option>Coordinator</option>
+                            </select>
+
+                        </div>
+                        <div className='form-element'>
+                            <label htmlFor="user ID">Use ID</label>
+                            <input type="text" id="user ID" placeholder='Enter User ID'/>
+                        </div>
+                        <div className='form-element'>
+                            <label htmlFor="password">Password</label>
+                            <input type="password" id="password" placeholder='Enter password'/>
+                        </div>
+                        <div className='form-element'>
+                            <button>Log In</button>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div className='popup2'>
+                    <div className='close-btn2'>&times;</div>
+                    <div className='form'>
+                        <h2>Register</h2>
+                        <div className='form-element'>
+                            <label>Position</label>
+                            <select name='position'>
+                                <option>Teacher</option>
+                                <option>Coordinator</option>
+                            </select>
+
+                        </div>
+                        <div className='form-element'>
+                            <label htmlFor="name">Name</label>
+                            <input type="text" id="name" placeholder='Enter Full name'/>
+                        </div>
+                        <div className='form-element'>
+                            <label htmlFor="user ID">Use ID</label>
+                            <input type="text" id="user ID" placeholder='Create User ID'/>
+                            <p>User Id must have uppercase and lower case with symbols</p>
+                        </div>
+                        <div className='form-element'>
+                            <label htmlFor="password">New Password</label>
+                            <input type="password" id="password" placeholder='Enter new password'/>
+                        </div>
+                        <div className='form-element'>
+                            <label htmlFor="password">Confirm Password</label>
+                            <input type="password" id="password" placeholder='confirm your password'/>
+                        </div>
+
+                        <div className='form-element'>
+                            <button>Submit</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
             </nav>
 
         </>
